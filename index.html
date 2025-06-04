@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="difficulty-container">
+        <h2>Select Difficulty</h2>
+        <button onclick="startQuiz('easy')">Easy</button>
+        <button onclick="startQuiz('medium')">Medium</button>
+        <button onclick="startQuiz('hard')">Hard</button>
+    </div>
+    <div class="container" style="display: none;">
+        <h1>Code Quiz</h1>
+        <div id="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>
+        <div id="quiz-container">
+            <p id="question"></p>
+            <div id="options"></div>
+        </div>
+        <button id="hint-btn" style="display: none;">Show Hint</button>
+        <p id="hint"></p>
+        <button id="next-btn">Next</button>
+        <p id="timer">Time left: <span id="time">30</span>s</p>
+        <p id="score">Score: <span id="current-score">0</span></p>
+        <button id="high-scores-btn" onclick="displayHighScores()">View High Scores</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
